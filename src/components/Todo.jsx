@@ -59,7 +59,7 @@ const Todo = () => {
         {todo ? (
           <div className="input-new-item">
             {todoVisibility ? (
-              <input type="text" value="" />
+              <input type="text" value="" onChange={(e) => e.target.value} />
             ) : (
               <input type="text" onChange={handleChange} />
             )}

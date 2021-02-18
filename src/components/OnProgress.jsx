@@ -61,7 +61,7 @@ const OnProgress = () => {
         {onProgress ? (
           <div className="input-new-item">
             {onProgressVisibility ? (
-              <input type="text" value="" />
+              <input type="text" value="" onChange={(e) => e.target.value} />
             ) : (
               <input type="text" onChange={handleChange} />
             )}

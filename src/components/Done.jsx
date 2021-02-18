@@ -59,7 +59,7 @@ const Done = () => {
         {done ? (
           <div className="input-new-item">
             {doneVisibility ? (
-              <input type="text" value="" />
+              <input type="text" value="" onChange={(e) => e.target.value} />
             ) : (
               <input type="text" onChange={handleChange} />
             )}
