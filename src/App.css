@@ -48,6 +48,10 @@ h1 {
   margin: 0 5px;
 }
 
+.hide-input {
+  display: none;
+}
+
 input {
   padding: 1px 2px;
 }
