@@ -1,13 +1,13 @@
-import Board from "./Board";
+import Todo from "./Todo";
+import OnProgress from "./OnProgress";
+import Done from "./Done";
 
 const Boards = () => {
-  const boardList = ["Todo (0)", "On Progress (0)", "Done (0)"];
-
   return (
     <>
-      {boardList.map((board) => {
-        return <Board board={board} />;
-      })}
+      <Todo />
+      <OnProgress />
+      <Done />
     </>
   );
 };
